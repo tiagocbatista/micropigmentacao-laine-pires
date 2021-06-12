@@ -1,0 +1,164 @@
+* {
+    box-sizing: content-box;
+}
+
+.navLinks:hover {
+    color: #9b7352;
+}
+
+.servicesSection {
+    background-attachment: fixed;
+    background-image: url("../images/bgMainHome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.servicesContainer {
+    margin-top: 2rem;
+}
+
+.serviceName {
+    color: #9b7352;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.serviceContent {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    padding: 1rem;
+}
+
+.imageCarousel {
+    position: relative;
+    text-align: center;
+}
+
+.servicePicture {
+    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(155, 115, 82, 0.37);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 30rem;
+    transition: display 1s;
+}
+
+.arrows {
+    display: block;
+}
+
+.leftArrowCarousel,
+.rightArrowCarousel {
+    cursor: pointer;
+    transition: 0.5s;
+    width: 30px;
+}
+
+.leftArrowCarousel:hover,
+.rightArrowCarousel:hover {
+    transform: scale(1.1);
+}
+
+.serviceInformations {
+    color: #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+}
+
+.serviceDescription,
+.serviceDuration,
+.serviceCare,
+.serviceTechniques {
+    font-size: 2rem;
+}
+
+.serviceCareLink {
+    background: rgba(155, 115, 82, 0.5);
+    border-radius: 20px;
+    color: white;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.serviceCareLink:hover {
+    background: rgba(155, 115, 82, 1);
+}
+
+.subservicesArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.subserviceContainer {
+    background-image: radial-gradient(#f0f8ff, #E8DCCA);
+    border-radius: 30px;
+    padding: 0 1rem 1rem 1rem;
+    width: 30%;
+}
+
+.subserviceTitle {
+    color: #9b7352;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.subserviceContent {
+    color: #707070;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .serviceContent {
+        flex-direction: column;
+    }
+
+    .servicePicture {
+        width: 100%;
+    }
+
+    .serviceDescription,
+    .serviceDuration,
+    .serviceCare,
+    .serviceTechniques {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .serviceDescription {
+        margin-top: 1.5rem;
+    }
+
+    .subservicesArea {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .subserviceContainer {
+        margin: 1.5rem 0;
+        width: 80%
+    }
+
+    .subserviceTitle {
+        padding: 0.5rem;
+    }
+
+    .serviceName {
+        text-align: center;
+    }
+}

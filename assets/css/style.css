@@ -1,0 +1,481 @@
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/*Section: Header*/
+
+.header {
+    align-items: center;
+    background-color: #E8DCCA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.logoPicture {
+    width: 6.5rem;
+}
+
+.menuIcon {
+    align-self: flex-start;
+    cursor: pointer;
+    position: relative;
+    width: 25px;
+}
+
+.menuSuspensoContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.menuSuspenso {
+    align-items: center;
+    background: #E8DCCA;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .45);
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.2rem;
+    position: absolute;
+    transition: display 5s;
+    width: 35%;
+    overflow: hidden;
+}
+
+.hide {
+    height: 0px;
+    transition: 0.5s;
+}
+
+.show {
+    height: 200px;
+    transition: 0.5s;
+}
+
+.closeButton {
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 15px;
+}
+
+.navMenu {
+    display: none;
+    margin: 1rem 0;
+}
+
+.navItens {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.navItensSuspended {
+    font-size: 1.7rem;
+    margin: .5rem 0;
+}
+
+.navItens:hover,
+.navItensSuspended:hover {
+    text-decoration: underline;
+    text-decoration-color: #FEEFDD;
+    text-underline-position: under;
+}
+
+#active {
+    text-decoration: underline;
+    text-decoration-color: #FEEFDD;
+    text-underline-position: under;
+}
+
+.navLinks {
+    color: #9b7352;
+    text-decoration: none;
+}
+
+/*Fim do Header*/
+
+/*Section: About me*/
+
+.whoAmISection {
+    background-attachment: fixed;
+    background-image: url("../images/bgMainHome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+}
+
+.sectionTitle {
+    color: #9b7352;
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aboutMePicture {
+    border-radius: 15rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+.textBio {
+    color: #707070;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+.textualSection {
+    text-align: left;
+}
+
+.listAboutMe {
+    padding: 0 1rem;
+}
+
+.itensAboutMe {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+#item1 {
+    list-style-image: url(../images/n1.png);
+}
+
+#item2 {
+    list-style-image: url(../images/n2.png);
+}
+
+#item3 {
+    list-style-image: url(../images/n3.png);
+}
+
+#item4 {
+    list-style-image: url(../images/n4.png);
+}
+
+#item5 {
+    list-style-image: url(../images/n5.png);
+}
+
+.aboutMeSubtitle {
+    font-size: 2rem;
+    color: #9b7352;
+}
+
+.aboutMeContent {
+    color: #707070;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.linkToServices {
+    background: linear-gradient(to bottom, #c79d7b 5%, #a8845e 100%);
+    background: #c79d7b;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0 0.3rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.linkToServices:hover {
+    transform: scale(1.02);
+}
+
+/*Section: Catálogo de Serviços*/
+
+.servicesCatalogue {
+    background-color: #E8DCCA;
+    padding: 1rem;
+    text-align: center;
+}
+
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceTitle {
+    color: #9b7352;
+    font-size: 2rem;
+    border-bottom: 3px solid white;
+    border-bottom-width: thick;
+}
+
+.imageContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.serviceVideos {
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem #9b7352;
+    width: 90%;
+}
+
+.moreInfoLink {
+    box-shadow: inset 0px 1px 0px 0px #a6827e;
+    background: linear-gradient(to bottom, #c79d7b 5%, #a8845e 100%);
+    background-color: #c79d7b;
+    border-radius: 3px;
+    border: 1px solid #54381e;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 16px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #4d3534;
+}
+
+.moreInfoLink:hover {
+    background: linear-gradient(to bottom, #a8845e 5%, #c79d7b 100%);
+    background-color: #a8845e;
+}
+
+.moreInfoLink:active {
+    position: relative;
+    top: 1px;
+}
+
+.localizationSection {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url("../images/bgMainHome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.localArea {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.localMap {
+    width: 100%;
+    height: 30vw;
+}
+
+.addressContent {
+    color: #707070;
+    padding: 1rem;
+}
+
+/*Footer*/
+.footerContainer {
+    align-items: center;
+    background-color: rgba(112, 112, 112, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logoFooter {
+    width: 128px;
+    height: 92.275px;
+}
+
+.socialMedia {
+    padding: 1.5rem;
+}
+
+.whatsappIcon,
+.instagramIcon {
+    padding: 1rem;
+    width: 30px;
+    transition: 0.3s;
+}
+
+.whatsappIcon:hover,
+.instagramIcon:hover {
+    transform: svwcale(1.5);
+}
+
+@media screen and (min-width: 700px) {
+    .logoPicture {
+        width: 10rem;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .navMenu {
+        display: inline;
+    }
+
+    .navItens {
+        font-size: 1.5rem;
+    }
+
+    .sectionTitle {
+        font-size: 4rem;
+    }
+
+    .aboutMeSubtitle {
+        font-size: 3rem;
+    }
+
+    .menuSuspensoContainer {
+        display: none;
+    }
+
+    .aboutMeContent {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .itensAboutMe {
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+
+    #item1 {
+        background: url(../images/n1.png) no-repeat left 5px;
+        background-size: 3.5rem;
+        list-style-image: none;
+        padding-left: 5rem;
+    }
+
+    #item2 {
+        background: url(../images/n2.png) no-repeat left 5px;
+        background-size: 3.5rem;
+        list-style-image: none;
+        padding-left: 5rem;
+    }
+
+    #item3 {
+        background: url(../images/n3.png) no-repeat left 5px;
+        background-size: 3.5rem;
+        list-style-image: none;
+        padding-left: 5rem;
+    }
+
+    #item4 {
+        background: url(../images/n4.png) no-repeat left 5px;
+        background-size: 3.5rem;
+        list-style-image: none;
+        padding-left: 5rem;
+    }
+
+    #item5 {
+        background: url(../images/n5.png) no-repeat left 5px;
+        background-size: 3.5rem;
+        list-style-image: none;
+        padding-left: 5rem;
+    }
+
+    .serviceTitle {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .serviceVideos {
+        margin-top: 1.5rem;
+    }
+
+    .moreInfoLink {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .logoPicture {
+        width: 8rem;
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navItens {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .navLinks {
+        padding: 2rem;
+    }
+
+    .sectionTitle {
+        font-size: 3rem;
+    }
+
+    .whoAmI {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .aboutMePicture {
+        width: 40%;
+        height: 40%;
+    }
+
+    .textualSection {
+        width: 100%;
+    }
+
+    .aboutMeSubtitle {
+        font-size: 2rem;
+    }
+
+    .aboutMeContent {
+        font-size: 2rem;
+    }
+
+    .services {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+
+    .serviceContainer {
+        width: 50%;
+    }
+
+    .serviceVideos {
+        width: 500px;
+        height: 500px;
+    }
+
+    .moreInfoLink {
+        margin-top: 2rem;
+    }
+}

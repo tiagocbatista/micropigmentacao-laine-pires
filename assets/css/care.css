@@ -1,0 +1,14 @@
+.list-group-item.active {
+    background-color: #E8DCCA;
+    border-color: #E8DCCA;
+    color: #000;
+}
+
+.caret:before {
+    content: url('../images/caretFill.svg');
+    margin-right: 1rem;
+}
+
+.subtitle {
+    color: #9b7352;
+}
