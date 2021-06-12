@@ -3,6 +3,7 @@
     background-image: url("../images/bgMainHome.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: calc(100vh - 220px);
 }
 
 .socialMediaContainer {
