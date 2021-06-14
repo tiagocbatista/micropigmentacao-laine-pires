@@ -113,6 +113,10 @@ strong {
 
 /*Section: About me*/
 
+.hideOnMobile {
+    display: none;
+}
+
 .whoAmISection {
     background-attachment: fixed;
     background-image: url("../images/bgMainHome.png");
@@ -356,6 +360,10 @@ strong {
     .aboutMeContent {
         font-size: 2rem;
         line-height: 2.5rem;
+    }
+
+    .hideOnMobile {
+        display: inline-block;
     }
 
     .itensAboutMe {
